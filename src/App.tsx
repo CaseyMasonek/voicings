@@ -53,7 +53,7 @@ export default function App() {
     return (
         <>
             <button onClick={() => setIsModalOpen(true)} className={"absolute top-0 right-2 text-lg"}>Settings</button>
-            {isModalOpen && (<div className={"absolute w-full h-screen bg-black/50 flex justify-center items-center"}>
+            {isModalOpen && (<div className={"absolute w-full h-[100dvh] bg-black/50 flex justify-center items-center"}>
                 <div className={"absolute min-w-80 w-1/2 h-[90vh] bg-white rounded-xl"}>
                     <div className={"h-[20vh] md:h-[12vh] flex flex-col justify-between overflow-scroll"}>
                         <button onClick={() => setIsModalOpen(false)} className={"absolute top-4 right-6 text-2xl"}>X</button>
@@ -87,7 +87,7 @@ export default function App() {
                     </div>
                 </div>
             </div>)}
-        <div className={"w-full h-screen flex-col flex items-center justify-center"}>
+        <div className={"w-full h-[100dvh] flex-col flex items-center justify-center"}>
             <p className={"text-5xl mb-5"}>{chord}</p>
             <div className={"flex-row mb-4"}>
                 {Array.from({length: count}).map((_, i) => (
